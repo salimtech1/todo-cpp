@@ -1,0 +1,7 @@
+# Compiled program
+todo
+todo.exe
+*.o
+
+# Your personal saved tasks
+tasks.txt
