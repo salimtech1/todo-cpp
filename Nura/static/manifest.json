@@ -1,0 +1,17 @@
+{
+  "name": "Nura — Small steps. Bright days.",
+  "short_name": "Nura",
+  "description": "A kind, local-first companion for habits, focus, and the things that matter.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0d12",
+  "theme_color": "#0b0d12",
+  "icons": [
+    {
+      "src": "/static/icons/nura.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

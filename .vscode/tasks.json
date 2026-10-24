@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Nura",
+      "type": "shell",
+      "command": "${workspaceFolder}\\Start Nura.bat",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "isBackground": false
+    },
+    {
+      "label": "Test Nura",
+      "type": "process",
+      "command": "${workspaceFolder}\\..\\Nura\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "pytest"],
+      "options": { "cwd": "${workspaceFolder}\\..\\Nura" },
+      "problemMatcher": []
+    }
+  ]
+}

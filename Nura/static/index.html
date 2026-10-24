@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="Nura — Small steps. Bright days.">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/static/css/app.css">
+  <title>Nura — Small steps. Bright days.</title>
+</head>
+<body>
+  <div class="aurora aurora-one"></div><div class="aurora aurora-two"></div>
+  <header class="preview-bar" aria-label="Device preview controls">
+    <a class="brand" href="#" aria-label="Nura home"><span class="brand-mark">n</span><span>Nura <small>preview</small></span></a>
+    <div class="preview-controls">
+      <label class="sr-only" for="device-mode">Device frame</label>
+      <select id="device-mode" aria-label="Device preview size">
+        <option value="iphone">iPhone</option><option value="android">Android</option>
+        <option value="small">Small phone</option><option value="tablet">Tablet</option>
+        <option value="none">No frame</option>
+      </select>
+      <button class="icon-button" id="rotate-device" aria-label="Rotate device" title="Rotate device">↻</button>
+      <button class="icon-button" id="quick-theme" aria-label="Toggle light and dark theme" title="Toggle theme">◐</button>
+    </div>
+  </header>
+  <main class="stage">
+    <div class="device-shell" id="device-shell" data-device="iphone">
+      <div class="device-screen" id="device-screen">
+        <div class="device-status"><span id="status-time">9:41</span><span class="dynamic-island"></span><span class="status-icons">● ▰</span></div>
+        <div id="app" class="app-viewport" aria-live="polite">
+          <div class="loading"><span class="brand-mark">n</span><p>Making space for a brighter day…</p></div>
+        </div>
+        <div class="home-indicator"></div>
+      </div>
+    </div>
+    <aside class="preview-note"><span class="note-dot"></span> Your calm corner of the day.<br><small>Private · local-first · yours</small></aside>
+  </main>
+  <div id="toast-region" class="toast-region" role="status" aria-live="polite"></div>
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>
